@@ -28,7 +28,20 @@ npm run build
 npm start
 ```
 
-## Стек
+## Размещение на Vercel
+
+Импортируйте этот репозиторий, выберите ветку `main` и корневую папку проекта. Файл `vercel.json` задаёт сборку Next.js для Vercel, установку через `npm ci` и каталог `.next`. Переменные окружения для читалки не нужны.
+
+Для проверки такой же сборки локально:
+
+```bash
+npx next build --webpack
+npx next start
+```
+
+Обычный `npm run build` сохраняет исходную сборку Vinext для Cloudflare / ChatGPT Sites.
+
+## Стек приложения
 
 React 19, TypeScript, Vinext/Vite, Cloudflare Workers, IndexedDB.
 
